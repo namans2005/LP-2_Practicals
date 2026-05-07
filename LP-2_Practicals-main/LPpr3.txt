@@ -1,0 +1,87 @@
+1. What is a Greedy Algorithm?
+👉 It makes the best choice at each step to reach optimal solution.
+
+
+2. Why is Selection Sort considered greedy?
+👉 Because it selects the minimum element at every step.
+
+
+3. What does Selection Sort do?
+👉 It repeatedly:
+    finds smallest element
+    swaps it to correct position
+
+
+4. What is time complexity of Selection Sort?
+👉 O(n²)
+
+
+5. Is Selection Sort stable?
+👉 ❌ No (because of swapping)
+
+
+6. What is space complexity of Selection Sort?
+👉 O(1) (in-place sorting)
+
+
+7. What does mini variable store?
+👉 Index of minimum element in remaining array
+
+
+8. Why swap after inner loop?
+👉 Because we must first find the smallest element, then swap once.
+
+
+9. What is the output after first iteration?
+For [34, 20, 3, 14]
+👉 [3, 20, 34, 14]
+
+
+🔥 PRIM’S MST QUESTIONS
+10. What is MST?
+👉 Minimum Spanning Tree =
+    A tree connecting all vertices with minimum total edge weight
+
+
+11. What does Prim’s Algorithm do?
+👉 Builds MST by adding smallest edge step-by-step
+
+
+12. Why is Prim’s greedy?
+👉 It always chooses minimum weight edge available
+
+
+13. What is visited set?
+👉 Tracks nodes already included in MST
+
+
+14. What is min_heap used for?
+👉 To always get minimum weight edge efficiently
+
+
+15. What is time complexity of Prim’s (using heap)?
+👉 O(E log V)
+
+
+16. What is role of parent?
+👉 Stores from which node the edge came
+
+
+17. Why check if node in visited?
+👉 To avoid cycles in MST
+
+
+18. What is output of Prim’s algorithm?
+👉list of edges in MST
+  total minimum cost
+
+
+19. Difference between Selection Sort and Prim’s?
+👉Selection Sort → sorting
+  Prim’s → graph optimization
+
+
+20. Real-world use of MST?
+👉network design
+  road/pipe connections
+  cost optimization

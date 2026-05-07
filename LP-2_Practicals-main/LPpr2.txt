@@ -1,0 +1,69 @@
+1. What is A* Algorithm?
+👉 A* is a search algorithm used to find the shortest path between start and goal.
+
+
+2. What type of algorithm is A*?
+👉 Informed search (uses heuristic)
+
+
+3. What is heuristic?
+👉 An estimate of distance from current node to goal.
+
+
+4. What is formula used in A*?
+👉 f(n) = g(n) + h(n)
+    g(n) → actual cost
+    h(n) → heuristic
+
+
+5. What is g_cost in your code?
+👉 Stores actual cost from start to node
+
+
+6. What is heuristic dictionary?
+👉 Stores estimated cost to goal
+
+
+7. What is open_list?
+👉 Priority queue (min heap) storing nodes to explore.
+
+
+8. Why use heapq?
+👉 To always pick node with lowest f(n) efficiently.
+
+
+9. What is parent used for?
+👉 To reconstruct path after reaching goal.
+
+
+10. When does algorithm stop?
+👉 When:
+    node == goal
+
+
+11. What is output of your code?
+👉
+    Path:
+    ['S', 'B', 'C', 'G']
+
+    Cost:
+    9
+
+
+12. Why did it choose path S → B → C → G?
+👉 Because it had lowest total cost using f(n).
+
+
+13. Is A* optimal?
+👉 ✅ Yes, if heuristic is admissible (never overestimates)
+
+
+14. What is admissible heuristic?
+👉 Heuristic that never overestimates actual cost
+
+
+15. Real-world applications?
+👉
+    maps (Google Maps shortest path)
+    games (pathfinding)
+    robotics

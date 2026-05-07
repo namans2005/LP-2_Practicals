@@ -1,0 +1,45 @@
+1. What is Google Cloud Platform?
+👉 It is a cloud service where we can run applications, store data, and use computing resources online instead of local system.
+
+
+2. What is a project in Google Cloud?
+👉 A project is a workspace/container where all resources (code, VM, storage) are managed.
+
+
+3. Why did you create ccAcademia project?
+👉 To organize and run my practical inside a dedicated cloud environment.
+
+
+4. What is Cloud Shell?
+👉 Cloud Shell is a browser-based terminal provided by Google Cloud to run commands.
+
+
+5. Why use Cloud Shell instead of local terminal?
+👉 Because:
+    no setup needed
+    runs on cloud
+    ready with tools like git and python
+
+
+6. What is GitHub?
+👉 A platform to store, manage, and share code repositories.
+
+
+7. What does git clone do?
+👉 It copies a repository from GitHub to your Cloud Shell environment.
+
+
+8. What is the use of cd and ls?
+👉 cd → change directory
+    ls → list files
+
+
+9. How did you run your Python program?
+👉 Using:
+    python3 hellogcp.py
+
+
+10. What is the output of your program?
+👉 It prints a message like:
+    Hello Google Cloud
+    Hello <your name>

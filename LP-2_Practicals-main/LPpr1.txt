@@ -1,0 +1,73 @@
+1. What is a graph?
+👉 A data structure of nodes (vertices) and edges (connections).
+
+
+2. What type of graph did you use?
+👉 Undirected graph (connections are two-way)
+
+
+3. What is Breadth First Search (BFS)?
+👉 Traverses graph level by level.
+
+
+4. What is Depth First Search (DFS)?
+👉 Traverses graph deep first, then backtracks.
+
+
+5. What data structure is used in BFS?
+👉 Queue (FIFO)
+
+
+6. What data structure is used in DFS?
+👉 Stack (LIFO)
+
+
+7. What is visit_comp?
+👉 List to keep track of visited nodes.
+
+
+8. Why is visited list needed?
+👉 To avoid revisiting nodes and infinite loops.
+
+
+9. How does BFS work in your code?
+👉
+    Start from node
+    Visit neighbors
+    Add to queue
+    Repeat
+
+
+10. How does DFS work in your code?
+👉
+    Go deep using stack
+    Visit node
+    Push neighbors
+    Backtrack when needed
+
+
+11. Why use queue.pop(0) in BFS?
+👉 Removes first element (FIFO behavior)
+
+
+12. Why use stack.pop() in DFS?
+👉 Removes last element (LIFO behavior)
+
+
+13. Why reverse neighbors in DFS?
+👉 To maintain correct traversal order
+
+
+14. Output of BFS from 'A'?
+👉 A B C D E F G H J
+
+
+15. Output of DFS from 'A'?
+👉 A B E F C G H D J
+
+
+16. Difference between BFS and DFS?
+👉BFS → level-wise
+  DFS → depth-wise
+
+

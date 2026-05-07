@@ -1,0 +1,95 @@
+1. What is Salesforce?
+👉 Cloud-based CRM platform used to manage customer data, automation, and applications.
+
+
+2. Why use Salesforce?
+👉 Because it provides:
+    cloud storage
+    no installation
+    built-in tools for business apps
+
+
+3. What is Apex?
+👉 Apex is a Java-like programming language used in Salesforce to write backend logic.
+
+
+4. What is Execute Anonymous Window?
+👉 A place where we run temporary Apex code directly without saving it.
+
+
+5. Why did you use Execute Anonymous?
+👉 To quickly test methods like calculator operations without creating UI.
+
+
+6. What is a class in Apex?
+👉 A blueprint that contains variables and methods.
+
+
+7. What is a method?
+👉 A block of code that performs a specific task.
+
+
+8. What is static method?
+👉 Method that can be called without creating object.
+
+
+9. What is non-static method?
+👉 Method that requires object creation to call.
+
+
+10. Why did you use static methods in your calculator?
+👉 To directly call operations like addition without creating objects.
+
+
+11. What is object in Apex?
+👉 Instance of a class used to access non-static methods.
+
+
+12. What is System.debug()?
+👉 Used to print output in logs for checking results.
+
+
+13. What is your calculator program doing?
+👉 It performs basic arithmetic operations:
+    addition
+    subtraction
+    multiplication
+    division
+
+
+14. Why division result was 0 sometimes?
+👉 Because:
+    Integer division truncates decimal values
+    Example: 4/5 = 0
+
+
+15. How to fix division issue?
+👉 Use:
+    Decimal a = 4;
+    Decimal b = 5;
+
+
+16. Difference between Integer and Decimal?
+👉 Integer → whole numbers
+👉 Decimal → supports fractions
+
+
+17. What is debugging?
+👉 Process of finding and fixing errors in code.
+
+
+18. What is syntax error?
+👉 Error due to wrong code format (like missing brackets or indentation).
+
+
+19. Why did you get error “Unexpected token”?
+👉 Because:
+    Code was written in wrong place (Execute Anonymous vs class)
+    Or invalid syntax used
+
+
+20. How would you improve your calculator?
+👉 Add:
+    user input
+    UI (Lightning / Visualforce)
+    error handling

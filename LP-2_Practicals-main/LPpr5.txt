@@ -1,0 +1,85 @@
+1. What is this program?
+👉 It is a basic rule-based chatbot that detects emergency type and gives helpline number.
+
+
+2. What type of chatbot is this?
+👉 Keyword-based chatbot (not AI-based)
+
+
+3. What are “intents”?
+👉 Intents represent user needs/categories like police, fire, ambulance.
+
+
+4. Why did you use a dictionary for intents?
+👉 To map each department to related keywords efficiently.
+
+
+5. What is the role of helplines dictionary?
+👉 It maps department → emergency number.
+
+
+6. What does detect_intent() do?
+👉 It checks user input and returns the matching department.
+
+
+7. Why convert text to lowercase?
+👉 To make matching case-insensitive.
+
+
+8. How does keyword matching work?
+👉 It checks if any keyword is present inside user sentence.
+
+
+9. What happens if no keyword matches?
+👉 It returns None and prints “Could not understand”.
+
+
+10. What is the use of while True?
+👉 It keeps chatbot running continuously until user exits.
+
+
+11. Why did you use break?
+👉 To stop the loop when user types “exit”.
+
+
+12. What is input() used for?
+👉 To take user input from console.
+
+
+13. What is f-string used for?
+👉 To format output like:
+   f"Helpline Number: {helplines[dept]}"
+
+
+14. What is the limitation of this chatbot?
+👉  Only works on predefined keywords
+    No real understanding of language
+
+
+15. What if user types “robbery happened”?
+👉 It will match “robbery” → return police (if keyword added)
+
+
+16. Can this chatbot handle multiple emergencies?
+👉 No, it returns only first matched intent.
+
+
+17. How can you improve this chatbot?
+👉 Add more keywords
+    Use NLP (natural language processing)
+    Add voice input
+
+
+18. What is NLP?
+👉 Natural Language Processing  
+   It helps machines understand human language.
+
+19. What is the time complexity of detect_intent()?
+👉 O(n × m)
+(n = intents, m = keywords)
+
+
+20. Real-world use of this chatbot?
+👉emergency response systems
+  customer support bots
+  helpdesk automation

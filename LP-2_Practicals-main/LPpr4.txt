@@ -1,0 +1,92 @@
+1. What is the N-Queens problem?
+👉 Place N queens on an N×N chessboard such that no two queens attack each other.
+
+
+2. What type of problem is this?
+👉 Constraint Satisfaction Problem (CSP)
+
+
+3. What constraints are used?
+👉 No two queens should share:
+    same column
+    same diagonal
+
+
+4. Why row constraint is not checked?
+👉 Because we place one queen per row automatically.
+
+
+5. What approach did you use?
+👉 Backtracking
+
+
+6. What is backtracking?
+👉 Try a solution → if it fails → go back and try another.
+
+
+7. Where is backtracking happening in code?
+👉 In recursive call:
+    n_queens(n, r+1, cols+[c], d1+[r-c], d2+[r+c])
+
+
+8. What is the base condition?
+👉 if r == n:
+👉 All queens placed successfully
+
+
+9. What does cols represent?
+👉 Stores column positions of queens
+    Example:
+    [1, 3, 0, 2]
+
+
+10. What is d1?
+👉 Tracks main diagonals (r - c)
+
+
+11. What is d2?
+👉 Tracks anti-diagonals (r + c)
+
+
+12. Why use r-c and r+c?
+👉 To uniquely identify diagonals and avoid conflicts.
+
+
+13. What is branching in this code?
+👉 Trying each column:
+   for c in range(n)
+
+
+14. Where is bounding happening?
+👉 In condition:
+   if c not in cols and r-c not in d1 and r+c not in d2:
+👉 It prunes invalid solutions early.
+
+
+15. What is Branch and Bound?
+👉 Branch → try all possibilities
+   Bound → eliminate invalid paths early
+
+
+16. Time complexity?
+👉 Worst case: O(N!)
+
+
+17. Why is it expensive?
+👉 Because number of possible placements grows rapidly.
+
+
+18. What is output of your program?
+👉 List representation of solutions
+    Example:
+    [1, 3, 0, 2]
+
+
+19. How to print board instead of list?
+👉 Convert list into grid form (visual representation)
+
+
+20. Real-world application?
+👉  scheduling problems
+    resource allocation
+    puzzle solving
